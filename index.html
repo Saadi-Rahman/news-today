@@ -58,12 +58,12 @@
                     <h5 class="px-3 m-0">Sort By View: </h5>
                     <div class="dropdown">
                         <button class="btn btn-light fw-semibold text-secondary dropdown-toggle px-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Default
+                          Most Views
                         </button>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li><a class="dropdown-item" href="#">Most Views</a></li>
+                          <li><a class="dropdown-item" href="#">Most Popular</a></li>
+                          <li><a class="dropdown-item" href="#">Most Recent</a></li>
                         </ul>
                       </div>
                 </div>
@@ -79,25 +79,36 @@
         <!-- news items section start -->
         <section class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-md-6">
                     <div class="card mb-4">
                         <div class="row g-0">
-                          <div class="col-md-3">
-                            <img src="images/demo-pic.png" class="img-fluid rounded p-3" alt="...">
+                          <div class="col-md-4">
+                            <img src="images/demo-pic.png" class="img-fluid rounded p-3 h-100 w-100" alt="...">
                           </div>
-                          <div class="col-md-9">
+                          <div class="col-md-8">
                             <div class="card-body">
                               <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <!-- author and views start -->
-                              <div>
-                                <div>
-                                    
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptas nobis ullam deserunt ipsa ut perferendis dolor eius non molestias. </p>
+                              <!-- author and views info start -->
+                              <div class="d-flex flex-row justify-content-between align-items-center mt-2">
+                                <div class="d-flex flex-row align-items-center gap-2">
+                                    <div>
+                                        <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="40" loading="lazy"/>
+                                    </div>
+                                    <div>
+                                        <h6 class="m-0">Jhon Russel</h6>
+                                        <p class="m-0"><small class="text-muted">Jan 10, 2022</small></p>
+                                    </div>
                                 </div>
-                                <div></div>
-                                <div></div>
+                                <div class="d-flex flex-row align-items-center gap-2 pe-3">
+                                    <i class="fa-regular fa-eye fs-5"></i>
+                                    <h5 class="fw-bolder m-0">1.5M</h5>
+                                </div>
+                                <div>
+                                    <a href=""><i class="fa-solid fa-arrow-right fs-3 fw-bold text-primary pe-4"></i></a>
+                                </div>
                               </div>
-                              <!-- author and views end -->
+                              <!-- author and views info end -->
                             </div>
                           </div>
                         </div>
