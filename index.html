@@ -79,6 +79,7 @@
         <!-- news items section start -->
         <section class="container">
             <div class="row">
+
                 <div class="col-xl-6">
                     <div class="card mb-4">
                         <div class="row g-0">
@@ -91,6 +92,7 @@
                               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptas nobis ullam deserunt ipsa ut perferendis dolor eius non molestias. </p>
                               <!-- author and views info start -->
                               <div class="d-flex flex-row justify-content-between align-items-center mt-2">
+                                <!-- author info start -->
                                 <div class="d-flex flex-row align-items-center gap-2">
                                     <div>
                                         <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="40" loading="lazy"/>
@@ -100,13 +102,40 @@
                                         <p class="m-0"><small class="text-muted">Jan 10, 2022</small></p>
                                     </div>
                                 </div>
+                                <!-- author info end -->
+
+                                <!-- views start -->
                                 <div class="d-flex flex-row align-items-center gap-2 pe-3">
                                     <i class="fa-regular fa-eye fs-5"></i>
                                     <h5 class="fw-bolder m-0">1.5M</h5>
                                 </div>
+                                <!-- views end -->
+
+                                <!-- modal start -->
                                 <div>
-                                    <a href=""><i class="fa-solid fa-arrow-right fs-3 fw-bold text-primary pe-4"></i></a>
+                                    <!-- icon trigger modal -->
+                                    <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-arrow-right fs-3 fw-bold text-primary pe-4"></i></a>
+
+                                    <!-- Modal body start-->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                          </div>
+                                          <div class="modal-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolorum reprehenderit adipisci incidunt nesciunt, repudiandae laboriosam consequatur dolore id sit voluptate atque praesentium, iusto placeat repellat eius? Rerum error molestias illo pariatur aliquid cum sapiente, officiis blanditiis unde culpa quos soluta! Sunt voluptate dicta placeat, iure, quibusdam deserunt molestiae repellat, provident quia id quis? Cumque earum molestiae corporis consequatur vel nisi fuga quo obcaecati maiores vitae possimus, ullam aperiam dolorem, tempora maxime commodi a voluptas distinctio illo cum tempore, necessitatibus sapiente dolore veritatis. Tenetur dicta est iusto rerum tempora quaerat possimus nam beatae. Aliquam nesciunt accusamus asperiores sapiente exercitationem error, officia quod perferendis laboriosam eius aut. Nihil iure, est beatae praesentium nam molestias consectetur dolorem facilis ipsa ullam quo delectus dolorum. Esse sit eligendi accusantium eaque assumenda maxime corrupti, perspiciatis libero, impedit aperiam eveniet consequuntur hic ducimus dignissimos odit ut sequi quasi quam enim?</p>
+                                          </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- Modal body end-->
                                 </div>
+                                <!-- modal end -->
                               </div>
                               <!-- author and views info end -->
                             </div>
@@ -114,6 +143,115 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col-xl-6">
+                  <div class="card mb-4">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="images/demo-pic.png" class="img-fluid rounded p-3 h-100 w-100" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptas nobis ullam deserunt ipsa ut perferendis dolor eius non molestias. </p>
+                            <!-- author and views info start -->
+                            <div class="d-flex flex-row justify-content-between align-items-center mt-2">
+                              <div class="d-flex flex-row align-items-center gap-2">
+                                  <div>
+                                      <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="40" loading="lazy"/>
+                                  </div>
+                                  <div>
+                                      <h6 class="m-0">Jhon Russel</h6>
+                                      <p class="m-0"><small class="text-muted">Jan 10, 2022</small></p>
+                                  </div>
+                              </div>
+                              <div class="d-flex flex-row align-items-center gap-2 pe-3">
+                                  <i class="fa-regular fa-eye fs-5"></i>
+                                  <h5 class="fw-bolder m-0">1.5M</h5>
+                              </div>
+                              <div>
+                                  <a href=""><i class="fa-solid fa-arrow-right fs-3 fw-bold text-primary pe-4"></i></a>
+                              </div>
+                            </div>
+                            <!-- author and views info end -->
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+               </div>
+
+               <div class="col-xl-6">
+                 <div class="card mb-4">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="images/demo-pic.png" class="img-fluid rounded p-3 h-100 w-100" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptas nobis ullam deserunt ipsa ut perferendis dolor eius non molestias. </p>
+                          <!-- author and views info start -->
+                          <div class="d-flex flex-row justify-content-between align-items-center mt-2">
+                            <div class="d-flex flex-row align-items-center gap-2">
+                                <div>
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="40" loading="lazy"/>
+                                </div>
+                                <div>
+                                    <h6 class="m-0">Jhon Russel</h6>
+                                    <p class="m-0"><small class="text-muted">Jan 10, 2022</small></p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row align-items-center gap-2 pe-3">
+                                <i class="fa-regular fa-eye fs-5"></i>
+                                <h5 class="fw-bolder m-0">1.5M</h5>
+                            </div>
+                            <div>
+                                <a href=""><i class="fa-solid fa-arrow-right fs-3 fw-bold text-primary pe-4"></i></a>
+                            </div>
+                          </div>
+                          <!-- author and views info end -->
+                        </div>
+                      </div>
+                    </div>
+                 </div>
+              </div>
+
+              <div class="col-xl-6">
+                  <div class="card mb-4">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="images/demo-pic.png" class="img-fluid rounded p-3 h-100 w-100" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptas nobis ullam deserunt ipsa ut perferendis dolor eius non molestias. </p>
+                            <!-- author and views info start -->
+                            <div class="d-flex flex-row justify-content-between align-items-center mt-2">
+                              <div class="d-flex flex-row align-items-center gap-2">
+                                  <div>
+                                      <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="40" loading="lazy"/>
+                                  </div>
+                                  <div>
+                                      <h6 class="m-0">Jhon Russel</h6>
+                                      <p class="m-0"><small class="text-muted">Jan 10, 2022</small></p>
+                                  </div>
+                              </div>
+                              <div class="d-flex flex-row align-items-center gap-2 pe-3">
+                                  <i class="fa-regular fa-eye fs-5"></i>
+                                  <h5 class="fw-bolder m-0">1.5M</h5>
+                              </div>
+                              <div>
+                                  <a href=""><i class="fa-solid fa-arrow-right fs-3 fw-bold text-primary pe-4"></i></a>
+                              </div>
+                            </div>
+                            <!-- author and views info end -->
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+
             </div>
         </section>
         <!-- news items section end -->
