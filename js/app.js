@@ -2,6 +2,7 @@ const loadAllCategories = () =>{
     fetch('https://openapi.programming-hero.com/api/news/categories')
     .then(res => res.json())
     .then(data => displayAllCategories(data.data.news_category))
+    .catch(error => console.log(error))
 }
 
 
@@ -22,16 +23,36 @@ const displayAllCategories = categories =>{
 loadAllCategories();
 
 
+// spinner
+const toggleSpinner = isLoading => {
+    const spinnerSection = document.getElementById('spinner');
+    if (isLoading) {
+        spinnerSection.classList.remove('d-none')
+    } else {
+        spinnerSection.classList.add('d-none')
+    }
+}
+
 const loadAllNews = (category_id) => {
+
+    // spinner start
+    toggleSpinner(true);
+
     const url = `https://openapi.programming-hero.com/api/news/category/0${category_id}`;
     // console.log("get category details", category_id);
     fetch(url)
     .then(res => res.json())
     .then(data => displayNewsList(data.data))
+    .catch(error => console.log(error))
 }
 
 const displayNewsList = allNews =>{
-    console.log("allNews", allNews);
+    // console.log("allNews", allNews);
+
+    //Sort in array
+    allNews.sort((a, b) => {
+        return b.total_view - a.total_view;
+    });
 
     // total news count
     const totalNewsCount = document.getElementById('total-news-count').innerHTML = `${allNews.length} items found for this news category!!`;
@@ -100,6 +121,9 @@ const displayNewsList = allNews =>{
         `;
         newsItemsContainer.appendChild(newsDiv);
     })
+
+    //Spinner stop
+    toggleSpinner(false);
 }
 
 
@@ -109,6 +133,7 @@ const loadNewsDetails = (news_id) => {
     fetch(url)
     .then(res => res.json())
     .then(data => displayNewsDetails(data.data[0]))
+    .catch(error => console.log(error))
 }
 
 
