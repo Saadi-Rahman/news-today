@@ -78,7 +78,6 @@
         <!-- news items section start -->
         <section class="container">
             <div id="news-items-container" class="row row-cols-xl-2">
-
                 <div class="col">
                     <div class="card mb-4">
                         <div class="row g-0">
@@ -109,32 +108,6 @@
                                     <h5 class="fw-bolder m-0">1.5M</h5>
                                 </div>
                                 <!-- views end -->
-
-                                <!-- modal start -->
-                                <div>
-                                    <!-- icon trigger modal -->
-                                    <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-arrow-right fs-3 fw-bold text-primary pe-4"></i></a>
-
-                                    <!-- Modal body start-->
-                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-                                        <div class="modal-content">
-                                          <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                          </div>
-                                          <div class="modal-body">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolorum reprehenderit adipisci incidunt nesciunt, repudiandae laboriosam consequatur dolore id sit voluptate atque praesentium, iusto placeat repellat eius? Rerum error molestias illo pariatur aliquid cum sapiente, officiis blanditiis unde culpa quos soluta! Sunt voluptate dicta placeat, iure, quibusdam deserunt molestiae repellat, provident quia id quis? Cumque earum molestiae corporis consequatur vel nisi fuga quo obcaecati maiores vitae possimus, ullam aperiam dolorem, tempora maxime commodi a voluptas distinctio illo cum tempore, necessitatibus sapiente dolore veritatis. Tenetur dicta est iusto rerum tempora quaerat possimus nam beatae. Aliquam nesciunt accusamus asperiores sapiente exercitationem error, officia quod perferendis laboriosam eius aut. Nihil iure, est beatae praesentium nam molestias consectetur dolorem facilis ipsa ullam quo delectus dolorum. Esse sit eligendi accusantium eaque assumenda maxime corrupti, perspiciatis libero, impedit aperiam eveniet consequuntur hic ducimus dignissimos odit ut sequi quasi quam enim?</p>
-                                          </div>
-                                          <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <!-- Modal body end-->
-                                </div>
-                                <!-- modal end -->
                               </div>
                               <!-- author and views info end -->
                             </div>
@@ -142,8 +115,26 @@
                         </div>
                     </div>
                 </div>
-
             </div>
+
+            <!-- Modal body start-->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modal-headline"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div id="modal-details" class="modal-body">
+                    <p></p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal body end-->
         </section>
         <!-- news items section end -->
     </main>
